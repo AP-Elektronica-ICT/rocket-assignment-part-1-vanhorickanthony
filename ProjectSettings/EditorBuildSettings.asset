@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RocketDodger_L1.unity
+    guid: 3ea34d4b19916264daab3db4dba29aed
+  - enabled: 1
+    path: Assets/RocketDodger_L2.unity
+    guid: da50af1a76b86524a917da419d4937e5
   m_configObjects: {}

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4889682386957182606}
   - component: {fileID: 4889682386956084302}
   - component: {fileID: 4889682386960274062}
-  - component: {fileID: 1046257014560406749}
+  - component: {fileID: -8507348146755817607}
+  - component: {fileID: -5417954439615987004}
   m_Layer: 0
-  m_Name: Bumper
+  m_Name: Finish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4889682386958350990}
   m_LocalRotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 1, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9825908ce3f4f624a9fe2929944863c4, type: 2}
+  - {fileID: 2100000, guid: 0e58c2a411205534dbf76fb4eaf843ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,12 +90,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4889682386958350990}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4, y: 1, z: 4}
   m_Center: {x: 0, y: -0.4999997, z: 0}
---- !u!114 &1046257014560406749
+--- !u!114 &-8507348146755817607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,14 +104,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 4889682386958350990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 863f271be39bb1e4aba2efd745868f74, type: 3}
+  m_Script: {fileID: 11500000, guid: 16cf36b2f028464488b5bcb3809550ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 2
-  damageOnTrigger: 1
-  damageOnCollision: 1
-  continuousDamage: 0
-  continuousTimeBetweenHits: 1
-  destroySelfOnImpact: 0
-  delayBeforeDestroy: 0
-  explosionPrefab: {fileID: 0}
+  mNextLevel: RocketDodger_L2
+--- !u!114 &-5417954439615987004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889682386958350990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af08692899bd600448ab1725de3915c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mLevelToLoad: 

@@ -574,9 +574,12 @@ GameObject:
   - component: {fileID: 8643969274080916475}
   - component: {fileID: 3468578086348721840}
   - component: {fileID: 7645583644308416646}
+  - component: {fileID: -1849338331065671947}
+  - component: {fileID: 8899999816843143866}
+  - component: {fileID: -7416507680063244184}
   m_Layer: 0
   m_Name: Rocket
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,7 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2257535d55e1180478097b30f6dcc062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustFactor: 500
+  thrustFactor: 1000
   tiltFactor: 50
 --- !u!54 &7645583644308416646
 Rigidbody:
@@ -626,8 +629,52 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
+--- !u!114 &-1849338331065671947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213026509842416385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb761206ed575ca4d8566f0ea383b04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 10
+  respawnHealthPoints: 1
+  numberOfLives: 1
+  isAlive: 1
+  explosionPrefab: {fileID: 0}
+  onLivesGone: 1
+  LevelToLoad: 
+--- !u!114 &8899999816843143866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213026509842416385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6e572cdca8a39448f497f8e8be40d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &-7416507680063244184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213026509842416385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0199988, y: 4.5169344, z: 1}
+  m_Center: {x: 0.7601234, y: 1.1276135, z: 0}
 --- !u!1 &8700355075541613021
 GameObject:
   m_ObjectHideFlags: 0
